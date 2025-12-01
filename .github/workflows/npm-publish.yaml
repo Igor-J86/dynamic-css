@@ -1,4 +1,4 @@
-name: Release and publish react-carousel
+name: Release and publish DynamicCSSUtilities to NPM
 
 on:
   push:
