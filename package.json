@@ -1,0 +1,44 @@
+{
+  "name": "@igor-j86/dynamic-css",
+  "version": "1.0.2",
+  "description": "For generating dynamic CSS styles from React components.",
+  "keywords": [
+    "dynamic-css"
+  ],
+  "type": "module",
+  "module": "./dist/dynamic-css-utilities.esm.js",
+  "main": "./dist/dynamic-css-utilities.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/dynamic-css-utilities.esm.js",
+      "require": "./dist/dynamic-css-utilities.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igor-J86/dynamic-css.git"
+  },
+  "author": "Igor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igor-J86/dynamic-css/issues"
+  },
+  "homepage": "https://github.com/Igor-J86/dynamic-css#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest",
+    "access": "public"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
