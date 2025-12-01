@@ -1,5 +1,5 @@
 # Dynamic CSS
-Generating CSS utility classes on the fly in a separate CSS file.
+Generating CSS utility classes from React components on the fly in a separate CSS file.
 
 ## Vite config
 ```js
