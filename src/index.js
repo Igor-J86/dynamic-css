@@ -21,6 +21,7 @@ const PROP_MAP = {
   gap: "gap",
   bg: "background-color",
   color: "color",
+  flex: "flex",
 };
 
 function generateCSS(source) {

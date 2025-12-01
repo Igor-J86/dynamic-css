@@ -51,6 +51,7 @@ const MyComponent = () => {
 | gap           | "gap"             |
 | bg            | "background-color"|
 | color         | "color"           |
+| flex          | "flex"            |
 
 
 ## Developed with
