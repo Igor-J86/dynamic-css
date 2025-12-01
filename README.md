@@ -1,5 +1,5 @@
 # Dynamic CSS
-Generating CSS utility classes on the fly 
+Generating CSS utility classes on the fly in a separate CSS file.
 
 ## Vite config
 ```js
@@ -52,7 +52,6 @@ const MyComponent = () => {
 | bg            | "background-color"|
 | color         | "color"           |
 | flex          | "flex"            |
-
 
 ## Developed with
 - JavaScript
