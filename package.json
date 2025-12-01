@@ -1,10 +1,6 @@
 {
   "name": "@igor-j86/dynamic-css",
-<<<<<<< Updated upstream
   "version": "1.0.6",
-=======
-  "version": "1.0.4",
->>>>>>> Stashed changes
   "description": "For generating dynamic CSS styles from React components.",
   "keywords": [
     "dynamic-css"
