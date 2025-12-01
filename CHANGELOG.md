@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Igor-J86/dynamic-css/compare/v1.0.2...v1.0.3) (2025-12-01)
+
+
+### Bug Fixes
+
+* update readme ([c796416](https://github.com/Igor-J86/dynamic-css/commit/c796416d3ea49d350f85446b19b46384db6adc6c))
+
 ## [1.0.2](https://github.com/Igor-J86/dynamic-css/compare/v1.0.1...v1.0.2) (2025-12-01)
 
 
