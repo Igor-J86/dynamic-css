@@ -92,7 +92,7 @@ function collectSourceFiles(dir) {
 
     if (stat.isDirectory()) {
       content += collectSourceFiles(full);
-    } else if (/\.(jsx?|tsx?)$/.test(f)) {
+    } else if (/\.(jsx?|tsx?|vue|svelte|astro)$/.test(f)) {
       content += fs.readFileSync(full, "utf8");
     }
   }
