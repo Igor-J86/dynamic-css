@@ -8,7 +8,7 @@ export default defineConfig({
       entry: "src/index.js",
       name: "DynamicCSSUtilities",
       fileName: "dynamic-css-utilities",
-      formats: ["esm"],
+      formats: ["esm", "cjs"],
     },
     rollupOptions: {
       external: [

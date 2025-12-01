@@ -1,13 +1,28 @@
 {
   "name": "@igor-j86/dynamic-css",
+<<<<<<< Updated upstream
   "version": "1.0.6",
+=======
+  "version": "1.0.4",
+>>>>>>> Stashed changes
   "description": "For generating dynamic CSS styles from React components.",
   "keywords": [
     "dynamic-css"
   ],
   "type": "module",
+  "module": "./dist/dynamic-css-utilities.esm.js",
+  "main": "./dist/dynamic-css-utilities.cjs",
   "types": "./dist/index.d.ts",
-  "main": "./dist/dynamic-css-utilities.esm.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/dynamic-css-utilities.esm.js",
+      "require": "./dist/dynamic-css-utilities.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch"
