@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/Igor-J86/dynamic-css/compare/v1.0.7...v1.0.8) (2025-12-01)
+
+
+### Bug Fixes
+
+* add build command in ci ([85ae051](https://github.com/Igor-J86/dynamic-css/commit/85ae0519eb6ae13bc795108777ef328b9ad39ef4))
+
 ## [1.0.7](https://github.com/Igor-J86/dynamic-css/compare/v1.0.6...v1.0.7) (2025-12-01)
 
 
