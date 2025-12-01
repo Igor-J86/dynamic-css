@@ -7,13 +7,11 @@
   ],
   "type": "module",
   "module": "./dist/dynamic-css-utilities.esm.js",
-  "main": "./dist/dynamic-css-utilities.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/dynamic-css-utilities.esm.js",
-      "require": "./dist/dynamic-css-utilities.js"
+      "import": "./dist/dynamic-css-utilities.esm.js"
     }
   },
   "files": [
