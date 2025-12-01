@@ -1,3 +1,11 @@
+## [1.0.7](https://github.com/Igor-J86/dynamic-css/compare/v1.0.6...v1.0.7) (2025-12-01)
+
+
+### Bug Fixes
+
+* adjust package ([2bfd553](https://github.com/Igor-J86/dynamic-css/commit/2bfd5531a524320342fcc957271d717ade5030c7))
+* update package ([d3f5cfb](https://github.com/Igor-J86/dynamic-css/commit/d3f5cfb626d9f57ea1b929443986d23880806782))
+
 ## [1.0.6](https://github.com/Igor-J86/dynamic-css/compare/v1.0.5...v1.0.6) (2025-12-01)
 
 
