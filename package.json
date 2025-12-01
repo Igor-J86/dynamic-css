@@ -1,11 +1,10 @@
 {
   "name": "@igor-j86/dynamic-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "For generating dynamic CSS styles from React components.",
   "keywords": [
     "dynamic-css"
   ],
-  "type": "module",
   "module": "./dist/dynamic-css-utilities.esm.js",
   "main": "./dist/dynamic-css-utilities.js",
   "types": "./dist/index.d.ts",
