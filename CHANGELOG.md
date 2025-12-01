@@ -1,3 +1,13 @@
+## [1.0.5](https://github.com/Igor-J86/dynamic-css/compare/v1.0.4...v1.0.5) (2025-12-01)
+
+
+### Bug Fixes
+
+* add type module in package ([7ea0e83](https://github.com/Igor-J86/dynamic-css/commit/7ea0e8381ac1e7d35007ad46b44f0580654711b7))
+* adjust bundle config ([f966a7a](https://github.com/Igor-J86/dynamic-css/commit/f966a7a18ca0a0c45a030ce7507d213d4bd8ea45))
+* remove cjs format ([84c304d](https://github.com/Igor-J86/dynamic-css/commit/84c304d6ef759495e3787693bc09e3284a7d1780))
+* update bundle config to only esm ([06229dc](https://github.com/Igor-J86/dynamic-css/commit/06229dc322937b1ca075436e244fdfdb545fd295))
+
 ## [1.0.4](https://github.com/Igor-J86/dynamic-css/compare/v1.0.3...v1.0.4) (2025-12-01)
 
 
