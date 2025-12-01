@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/Igor-J86/dynamic-css/compare/v1.0.8...v1.0.9) (2025-12-01)
+
+
+### Bug Fixes
+
+* add support for Vue, Svelte and Astro files ([3d64511](https://github.com/Igor-J86/dynamic-css/commit/3d64511851432997eb41de87674030501c0467f6))
+
 ## [1.0.8](https://github.com/Igor-J86/dynamic-css/compare/v1.0.7...v1.0.8) (2025-12-01)
 
 
