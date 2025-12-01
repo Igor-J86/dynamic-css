@@ -6,17 +6,8 @@
     "dynamic-css"
   ],
   "type": "module",
-  "module": "./dist/dynamic-css-utilities.esm.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/dynamic-css-utilities.esm.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "main": "./dist/dynamic-css-utilities.esm.js",
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch"
