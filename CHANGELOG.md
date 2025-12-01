@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Igor-J86/dynamic-css/compare/v1.0.0...v1.0.1) (2025-12-01)
+
+
+### Bug Fixes
+
+* make semantic versioning ([dbd131d](https://github.com/Igor-J86/dynamic-css/commit/dbd131d48108244513410cb432eb7c2a08723be1))
+
 # 1.0.0 (2025-12-01)
 
 
