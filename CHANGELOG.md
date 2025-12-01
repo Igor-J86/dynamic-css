@@ -1,3 +1,12 @@
+## [1.0.6](https://github.com/Igor-J86/dynamic-css/compare/v1.0.5...v1.0.6) (2025-12-01)
+
+
+### Bug Fixes
+
+* add type module to package ([81b384d](https://github.com/Igor-J86/dynamic-css/commit/81b384d0174f2bcae497b490d77f5e0afb37928c))
+* adjust package ([7a43ca3](https://github.com/Igor-J86/dynamic-css/commit/7a43ca38395100497656800cf71af55e7cfb007a))
+* rename release config to cjs ([0945c55](https://github.com/Igor-J86/dynamic-css/commit/0945c55b6ca6db916c3771eb2452067cf7db77ce))
+
 ## [1.0.5](https://github.com/Igor-J86/dynamic-css/compare/v1.0.4...v1.0.5) (2025-12-01)
 
 
