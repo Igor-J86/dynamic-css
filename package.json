@@ -5,6 +5,7 @@
   "keywords": [
     "dynamic-css"
   ],
+  "type": "module",
   "module": "./dist/dynamic-css-utilities.esm.js",
   "types": "./dist/index.d.ts",
   "exports": {
