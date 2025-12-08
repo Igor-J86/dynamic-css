@@ -1,6 +1,6 @@
 {
   "name": "@igor-j86/dynamic-css",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "For generating dynamic CSS styles from React components.",
   "keywords": [
     "dynamic-css"
