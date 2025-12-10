@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/Igor-J86/dynamic-css/compare/v1.0.10...v1.0.11) (2025-12-10)
+
+
+### Bug Fixes
+
+* escape hashtags and add local docs page ([4cbc097](https://github.com/Igor-J86/dynamic-css/commit/4cbc097ca8b7b1370cdfb504ed2d2a6afd91deef))
+
 ## [1.0.10](https://github.com/Igor-J86/dynamic-css/compare/v1.0.9...v1.0.10) (2025-12-08)
 
 
