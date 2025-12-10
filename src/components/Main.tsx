@@ -2,7 +2,7 @@ import { PROP_MAP } from '../../script';
 
 const Main = () => {
   return (
-    <main className="pa[2rem] maxw[52rem] ma[auto] bg[#000000]">
+    <main className="pa[2rem] maxw[52rem] ma[auto]">
       <h1>Dynamic CSS Docs</h1>
       <p>
         This is a demo application showcasing the usage of Dynamic CSS Utilities. The package generates CSS classes based on specific patterns found in your components' className attributes.
