@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0 0 0.5lh;
+}
+
+dl {
+  max-width: max-content;
+  > div {
+    padding: 0.3rem 0.5rem;
+    &:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+  }
+  dt {
+    min-width: 5rem;
+  }
+  dd {
+    margin: 0;
+  }
+}

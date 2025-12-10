@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 // Map short prefixes → CSS property names
-const PROP_MAP = {
+export const PROP_MAP = {
   w: "width",
   h: "height",
   maxw: "max-width",
@@ -24,18 +24,18 @@ const PROP_MAP = {
   flex: "flex",
 };
 
-function generateCSS(source) {
+function generateCSS(source:string) {
   const dynamicClasses = extractDynamicUtilities(source);
 
   let css = "";
   css = "/* Auto-generated css */\n";
 
   for (const match of dynamicClasses) {
-    const [, prop, value, unit] = match;
+    const [, prop, value, unit] = match as [string, string, string, string];
 
-    if (!PROP_MAP[prop]) continue;
+    if (!PROP_MAP[prop as keyof typeof PROP_MAP]) continue;
 
-    const cssProp = PROP_MAP[prop];
+    const cssProp = PROP_MAP[prop as keyof typeof PROP_MAP];
     const cssValue = `${value}${unit}`;
     const className = escapeClassName(`${prop}[${value}]${unit}`);
 
@@ -46,14 +46,14 @@ function generateCSS(source) {
   return css;
 }
 
-function escapeClassName(className) {
-  return className.replace(/[\[\].%(),\/]/g, (match) => `\\${match}`);
+function escapeClassName(className: string) {
+  return className.replace(/[\[\].%(),\/#]/g, (match) => `\\${match}`);
 }
 
 // Regex for extracting class and className attributes
 const CLASS_ATTR_REGEX = /\bclass(Name)?\s*=\s*["'`](.*?)["'`]/gsi;
 
-function extractClassNames(source) {
+function extractClassNames(source: string) {
   const result = [];
   let match;
 
@@ -73,7 +73,7 @@ function extractClassNames(source) {
 // Regex for custom syntax: e.g. maxw[24]rem, w[420]px, h[70]vh etc.
 const DYNAMIC_CLASS_REGEX = /^([a-z]+)\[([^\]]+)\]([a-z%]*)$/i;
 
-function extractDynamicUtilities(source) {
+function extractDynamicUtilities(source: string) {
   const classes = extractClassNames(source);
 
   return classes
@@ -82,7 +82,7 @@ function extractDynamicUtilities(source) {
 }
 
 // Recursively collect file contents under /app folder
-function collectSourceFiles(dir) {
+function collectSourceFiles(dir: string): string {
   let content = "";
   const files = fs.readdirSync(dir);
 
@@ -100,9 +100,11 @@ function collectSourceFiles(dir) {
   return content;
 }
 
-export default function DynamicCSSUtilities(userConfig = {}) {
+export default function DynamicCSSUtilities(userConfig: { assetsPath?: string; fileName?: string; rootFolder?: string } = {}) {
   const OUTPUT_FILE = path.resolve(process.cwd(), userConfig.assetsPath || "app/css/", userConfig.fileName || "dynamic.css");
   const WATCH_DIR = path.resolve(process.cwd(),  userConfig.rootFolder || "app");
+
+  console.log("[dynamic-css] watching:", WATCH_DIR);
 
   function regenerate() {
     const source = collectSourceFiles(WATCH_DIR);
@@ -118,10 +120,10 @@ export default function DynamicCSSUtilities(userConfig = {}) {
     buildStart() {
       regenerate();
     },
-    configureServer(server) {
+    configureServer(server: any) {
       server.watcher.add(WATCH_DIR);
 
-      server.watcher.on("change", (file) => {
+      server.watcher.on("change", (file: string) => {
         if (!/\.(jsx?|tsx?)$/.test(file)) return;
         regenerate();
 

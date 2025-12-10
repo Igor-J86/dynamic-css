@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
+import react from '@vitejs/plugin-react';
 import fs from "node:fs";
+import DynamicCSSUtilities from "./script";
 
 export default defineConfig({
   build: {
     outDir: "dist",
     lib: {
-      entry: "src/index.js",
+      entry: "script/index.js",
       name: "DynamicCSSUtilities",
       fileName: "dynamic-css-utilities",
       formats: ["es","cjs"],
@@ -17,16 +19,25 @@ export default defineConfig({
       ],
       treeshake: false,
       output: {
-        preserveModules: true
+        preserveModules: true,
+        exports: 'named',
       },
       plugins: [
         {
           name: "copy-dts",
           closeBundle() {
-            fs.copyFileSync("src/index.d.ts", "dist/index.d.ts");
+            fs.copyFileSync("script/index.d.ts", "dist/index.d.ts");
           }
         }
       ]
     }
-  }
+  },
+  plugins: [
+    react(),
+    DynamicCSSUtilities({
+      rootFolder: 'src',
+      assetsPath: 'src/assets/',
+      fileName: 'dynamic.css'
+    })
+  ]
 })

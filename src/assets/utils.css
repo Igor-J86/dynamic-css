@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.gam {
+  gap: 0.5rem;
+}
