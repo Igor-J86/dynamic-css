@@ -41,6 +41,8 @@ const MyComponent = () => {
 | w             | "width"                     |
 | h             | "height"                    |
 | maxw          | "max-width"                 |
+| minw          | "min-width"                 |
+| maxh          | "max-height"                |
 | minh          | "min-height"                |
 | text          | "font-size"                 |
 | ma            | "margin"                    |
@@ -56,8 +58,11 @@ const MyComponent = () => {
 | gap           | "gap"                       |
 | bg            | "background-color"          |
 | color         | "color"                     |
-| flex          | "flex"                      |
-| flex-dir      | "flex-direction"            |
+| fd            | "flex-direction"            |
+| fb            | "flex-basis"                |
+| fg            | "flex-grow"                 |
+| fs            | "flex-shrink"               |
+| fw            | "flex-wrap"                 |
 | d             | "display"                   |
 | br            | "border-radius"             |
 | brtl          | "border-top-left-radius"    |

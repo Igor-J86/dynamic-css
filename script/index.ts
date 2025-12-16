@@ -6,6 +6,8 @@ export const PROP_MAP = {
   w: "width",
   h: "height",
   maxw: "max-width",
+  minw: "min-width",
+  maxh: "max-height",
   minh: "min-height",
   text: "font-size",
   ma: "margin",
@@ -21,8 +23,11 @@ export const PROP_MAP = {
   gap: "gap",
   bg: "background-color",
   color: "color",
-  flex: "flex",
-  "flex-dir": "flex-direction",
+  fd: "flex-direction",
+  fb: "flex-basis",
+  fg: "flex-grow",
+  fs: "flex-shrink",
+  fw: "flex-wrap",
   d: "display",
   br: "border-radius",
   brtl: "border-top-left-radius",
@@ -63,7 +68,7 @@ function generateCSS(source:string) {
 }
 
 function escapeClassName(className: string) {
-  return className.replace(/[\[\].%(),\/#]/g, (match) => `\\${match}`);
+  return className.replace(/[\[\].%(),\/#\s]/g, (match) => `\\${match}`);
 }
 
 // Regex for extracting class and className attributes
@@ -76,11 +81,10 @@ function extractClassNames(source: string) {
   while ((match = CLASS_ATTR_REGEX.exec(source))) {
     const raw = match[2]; // content inside quotes
 
-    const classes = raw
-      .split(/\s+/)
-      .filter(Boolean);
+    // Split on whitespace, but not within square brackets
+    const classes = raw.match(/[^\s\[]+(?:\[[^\]]*\])?/g) || [];
 
-    result.push(...classes);
+    result.push(...classes.filter(Boolean));
   }
 
   return result;
