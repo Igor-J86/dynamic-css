@@ -18,9 +18,9 @@ const Main = () => {
       </div>
 
       <h2>Available Utilities</h2>
-      <dl className="flex flex-dir-col gap[0.5rem]">
+      <dl className="d[flex] flex-dir[column] gap[0.5rem]">
       {Object.entries(PROP_MAP).map(([key, value]) => (
-        <div key={key} className="flex gam">
+        <div key={key} className="d[flex] gap[0.5rem]">
           <dt>{key}</dt>
           <dd>{value}</dd>
         </div>

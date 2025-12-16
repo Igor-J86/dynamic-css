@@ -8,4 +8,6 @@
 .bg\[--primaryRed\] { background-color: var(--primaryRed); }
 .mb\[1rem\] { margin-bottom: 1rem; }
 .ma\[0\] { margin: 0; }
+.d\[flex\] { display: flex; }
+.flex-dir\[column\] { flex-direction: column; }
 .gap\[0\.5rem\] { gap: 0.5rem; }
