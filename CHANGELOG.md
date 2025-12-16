@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/Igor-J86/dynamic-css/compare/v1.0.13...v1.0.14) (2025-12-16)
+
+
+### Bug Fixes
+
+* add more utilities ([b65c66b](https://github.com/Igor-J86/dynamic-css/commit/b65c66b86a731faa84046ee83e9c6911c6766059))
+
 ## [1.0.13](https://github.com/Igor-J86/dynamic-css/compare/v1.0.12...v1.0.13) (2025-12-16)
 
 
