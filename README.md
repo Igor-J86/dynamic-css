@@ -1,5 +1,10 @@
-# Dynamic CSS
+# Dynamic CSS plugin
 Generating CSS utility classes from UI components on the fly in a separate CSS file.
+
+## Getting started
+```
+npm install --save-dev @igor-j86/dynamic-css
+```
 
 ## Vite config
 ```js
@@ -52,6 +57,8 @@ const MyComponent = () => {
 | bg            | "background-color"|
 | color         | "color"           |
 | flex          | "flex"            |
+| d             | "display"         |
+| flex-dir      | "flex-direction"  |
 
 ## Developed with
 - JavaScript
