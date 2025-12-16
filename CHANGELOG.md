@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/Igor-J86/dynamic-css/compare/v1.0.11...v1.0.12) (2025-12-16)
+
+
+### Bug Fixes
+
+* add support for custom properties ([1c6da9b](https://github.com/Igor-J86/dynamic-css/commit/1c6da9b2876b8feb967b54d1f68b0139ceeb57c9))
+
 ## [1.0.11](https://github.com/Igor-J86/dynamic-css/compare/v1.0.10...v1.0.11) (2025-12-10)
 
 
