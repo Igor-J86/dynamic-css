@@ -9,10 +9,10 @@ const Main = () => {
       </p>
 
       <h2>Usage Example</h2>
-      <div className="w[42rem] maxw[100%] pa[1rem] bg[--primaryRed] mb[1rem]">
-        <pre className="ma[0]">
-          {`<div className="w[42rem] pa[1rem] bg[--primaryRed] mb[1rem]">
-  This div is 42rem wide, 50px tall, and has a red background.
+      <div className="w[42rem] maxw[100%] pa[1rem] bg[--primaryRed] mb[1rem] bs[solid] bc[hsl(0,100%,80%)] bw[2px] br[10px]">
+        <pre className="ma[0] color[white] ws[pre-wrap]">
+          {`<div className="w[42rem] maxw[100%] pa[1rem] bg[--primaryRed] mb[1rem] bs[solid] bc[hsl(0,100%,80%)] bw[2px] br[10px]">
+  This div is just a simple example.
 </div>`}
         </pre>
       </div>

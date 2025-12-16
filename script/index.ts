@@ -24,6 +24,16 @@ export const PROP_MAP = {
   flex: "flex",
   "flex-dir": "flex-direction",
   d: "display",
+  br: "border-radius",
+  brtl: "border-top-left-radius",
+  brtr: "border-top-right-radius",
+  brbl: "border-bottom-left-radius",
+  brbr: "border-bottom-right-radius",
+  bc: "border-color",
+  bw: "border-width",
+  bs: "border-style",
+  ws: "white-space",
+  lh: "line-height",
 };
 
 function generateCSS(source:string) {

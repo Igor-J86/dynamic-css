@@ -36,29 +36,39 @@ const MyComponent = () => {
 ```
 
 ## Current possible utilities
-| Prop          | Value             |
-| ------------- | ----------------- |
-| w             | "width"           |
-| h             | "height"          |
-| maxw          | "max-width"       |
-| minh          | "min-height"      |
-| text          | "font-size"       |
-| ma            | "margin"          |
-| pa            | "padding"         |
-| mt            | "margin-top"      |
-| mb            | "margin-bottom"   |
-| ml            | "margin-left"     |
-| mr            | "margin-right"    |
-| pt            | "padding-top"     |
-| pb            | "padding-bottom"  |
-| pl            | "padding-left"    |
-| pr            | "padding-right"   |
-| gap           | "gap"             |
-| bg            | "background-color"|
-| color         | "color"           |
-| flex          | "flex"            |
-| d             | "display"         |
-| flex-dir      | "flex-direction"  |
+| Prop          | Value                       |
+| ------------- | --------------------------- |
+| w             | "width"                     |
+| h             | "height"                    |
+| maxw          | "max-width"                 |
+| minh          | "min-height"                |
+| text          | "font-size"                 |
+| ma            | "margin"                    |
+| pa            | "padding"                   |
+| mt            | "margin-top"                |
+| mb            | "margin-bottom"             |
+| ml            | "margin-left"               |
+| mr            | "margin-right"              |
+| pt            | "padding-top"               |
+| pb            | "padding-bottom"            |
+| pl            | "padding-left"              |
+| pr            | "padding-right"             |
+| gap           | "gap"                       |
+| bg            | "background-color"          |
+| color         | "color"                     |
+| flex          | "flex"                      |
+| flex-dir      | "flex-direction"            |
+| d             | "display"                   |
+| br            | "border-radius"             |
+| brtl          | "border-top-left-radius"    |
+| brtr          | "border-top-right-radius"   |
+| brbl          | "border-bottom-left-radius" |
+| brbr          | "border-bottom-right-radius"|
+| bc            | "border-color"              |
+| bw            | "border-width"              |
+| bs            | "border-style"              |
+| ws            | "white-space"               |
+| lh            | "line-height"               |
 
 ## Tech stack
 - TypeScript

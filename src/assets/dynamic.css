@@ -7,7 +7,13 @@
 .pa\[1rem\] { padding: 1rem; }
 .bg\[--primaryRed\] { background-color: var(--primaryRed); }
 .mb\[1rem\] { margin-bottom: 1rem; }
+.bs\[solid\] { border-style: solid; }
+.bc\[hsl\(0\,100\%\,80\%\)\] { border-color: hsl(0,100%,80%); }
+.bw\[2px\] { border-width: 2px; }
+.br\[10px\] { border-radius: 10px; }
 .ma\[0\] { margin: 0; }
+.color\[white\] { color: white; }
+.ws\[pre-wrap\] { white-space: pre-wrap; }
 .d\[flex\] { display: flex; }
 .flex-dir\[column\] { flex-direction: column; }
 .gap\[0\.5rem\] { gap: 0.5rem; }

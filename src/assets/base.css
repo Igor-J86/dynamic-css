@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primaryRed: #ff0000;
+  --primaryRed: hsl(0, 60%, 50%);
 }
 
 body {
