@@ -63,6 +63,16 @@ const MyComponent = () => {
 | fg            | "flex-grow"                 |
 | fs            | "flex-shrink"               |
 | fw            | "flex-wrap"                 |
+| ac            | "align-content"             |
+| ai            | "align-items"               |
+| jc            | "justify-content"           |
+| ji            | "justify-items"             |
+| p             | "position"                  |
+| t             | "top"                       |
+| b             | "bottom"                    |
+| l             | "left"                      |
+| r             | "right"                     |
+| z             | "z-index"                   |
 | d             | "display"                   |
 | br            | "border-radius"             |
 | brtl          | "border-top-left-radius"    |
