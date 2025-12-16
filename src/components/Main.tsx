@@ -9,11 +9,13 @@ const Main = () => {
       </p>
 
       <h2>Usage Example</h2>
-      <pre>
-        {`<div className="w[100px] h[50px] bg[#ff0000]">
-  This div is 100px wide, 50px tall, and has a red background.
+      <div className="w[42rem] maxw[100%] pa[1rem] bg[--primaryRed] mb[1rem]">
+        <pre className="ma[0]">
+          {`<div className="w[42rem] pa[1rem] bg[--primaryRed] mb[1rem]">
+  This div is 42rem wide, 50px tall, and has a red background.
 </div>`}
-      </pre>
+        </pre>
+      </div>
 
       <h2>Available Utilities</h2>
       <dl className="flex flex-dir-col gap[0.5rem]">

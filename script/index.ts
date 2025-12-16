@@ -22,6 +22,8 @@ export const PROP_MAP = {
   bg: "background-color",
   color: "color",
   flex: "flex",
+  "flex-dir": "flex-direction",
+  d: "display",
 };
 
 function generateCSS(source:string) {
@@ -40,6 +42,10 @@ function generateCSS(source:string) {
     const className = escapeClassName(`${prop}[${value}]${unit}`);
 
     if (css.includes(`.${className} `)) continue;
+    if (cssValue.startsWith("--")) {
+      css += `.${className} { ${cssProp}: var(${cssValue}); }\n`;
+      continue;
+    }
     css += `.${className} { ${cssProp}: ${cssValue}; }\n`;
   }
 
@@ -71,7 +77,7 @@ function extractClassNames(source: string) {
 }
 
 // Regex for custom syntax: e.g. maxw[24]rem, w[420]px, h[70]vh etc.
-const DYNAMIC_CLASS_REGEX = /^([a-z]+)\[([^\]]+)\]([a-z%]*)$/i;
+const DYNAMIC_CLASS_REGEX = /^([a-z-]+)\[([^\]]+)\]([a-z%]*)$/i;
 
 function extractDynamicUtilities(source: string) {
   const classes = extractClassNames(source);

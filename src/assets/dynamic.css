@@ -2,8 +2,10 @@
 .pa\[2rem\] { padding: 2rem; }
 .maxw\[52rem\] { max-width: 52rem; }
 .ma\[auto\] { margin: auto; }
-.bg\[\#000000\] { background-color: #000000; }
-.w\[100px\] { width: 100px; }
-.h\[50px\] { height: 50px; }
-.bg\[\#ff0000\] { background-color: #ff0000; }
+.w\[42rem\] { width: 42rem; }
+.maxw\[100\%\] { max-width: 100%; }
+.pa\[1rem\] { padding: 1rem; }
+.bg\[--primaryRed\] { background-color: var(--primaryRed); }
+.mb\[1rem\] { margin-bottom: 1rem; }
+.ma\[0\] { margin: 0; }
 .gap\[0\.5rem\] { gap: 0.5rem; }
