@@ -60,9 +60,10 @@ const MyComponent = () => {
 | d             | "display"         |
 | flex-dir      | "flex-direction"  |
 
-## Developed with
-- JavaScript
+## Tech stack
+- TypeScript
 - Vite
+- Node
 
 ## License
 Distributed under the ISC License.
